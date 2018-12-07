@@ -1,0 +1,16 @@
+{
+    "name": "华为保时捷",
+    "description" : "抢购脚本",
+    "version": "1.0",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_icon": "huawei.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://www.vmall.com/product/*","https://sale.vmall.com/rush/hwm20bsj/*","https://www.vmall.com/order/nowConfirmcart"],
+          "js": ["jquery.min.js","huawei.js"],
+          "run_at":"document_end"
+        }
+      ]
+  }
